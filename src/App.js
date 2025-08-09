@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.scss";
 import List from "./Components/List";
-import { GameProvider, useGame } from "./useGame";
+import { useGame } from "./useGame";
 
 
 function App() {
