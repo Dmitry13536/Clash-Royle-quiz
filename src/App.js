@@ -20,6 +20,9 @@ function App() {
     buildings,
   } = useGame();
 
+  const [input, setInput] = useState("");
+
+
   const handleinput = useCallback(() => {
     if (every.includes(input.trim())) {
       addUserValue(input.trim());
@@ -60,7 +63,6 @@ function App() {
 
   const [message, setMessage] = useState("");
   const [show, setShow] = useState(false);
-  const [input, setInput] = useState("");
 
   return (
     <div className="container">
