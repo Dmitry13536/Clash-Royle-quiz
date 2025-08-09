@@ -1,23 +1,21 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./App.scss";
 import List from "./Components/List";
 import { useGame } from "./useGame";
 
 
 function App() {
-
-  const handleinput = () => {
+  const handleinput = useCallback(() => {
     if (every.includes(input.trim())) {
       addUserValue(input.trim());
       setMessage("Done");
-      setTriger((prev) => ++prev);
+      setTriger((prev) => prev + 1);
       setInput("");
     } else {
       setMessage("Nope");
-      setTriger(prev => ++prev)
+      setTriger((prev) => prev + 1);
     }
-  };
-
+  }, [every, input, addUserValue]); // Укажите все зависимости
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.code === "Enter") {
@@ -32,7 +30,7 @@ function App() {
     };
   }, [handleinput]);
 
-const [triger, setTriger] = useState(0);
+  const [triger, setTriger] = useState(0);
 
   useEffect(() => {
     setShow(true);
