@@ -47,7 +47,6 @@ const [triger, setTriger] = useState(0);
 
   const [message, setMessage] = useState("");
   const [show, setShow] = useState(false);
-  const [key, setKey] = useState("");
   const [input, setInput] = useState("");
   const {
     reset,

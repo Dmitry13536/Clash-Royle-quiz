@@ -2,6 +2,7 @@
   "name": "clash-quiz",
   "version": "0.1.0",
   "private": true,
+  "homepage": "dmitry13536.github.io/Clash-Royle-quiz/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",

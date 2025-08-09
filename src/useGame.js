@@ -195,9 +195,9 @@ export const GameProvider = ({ children }) => {
     setUserValue((prevUserValue) => [...prevUserValue, thing]);
   }, []);
 
-  const showEvery = useCallback(() => {
+  const showEvery = () => {
     setUserValue([...every]);
-  }, []);
+  };
 
   const reset = useCallback(() => {
     setUserValue([]);
