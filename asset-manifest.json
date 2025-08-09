@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Clash-Royle-quiz/static/css/main.36528511.css",
+    "main.js": "/Clash-Royle-quiz/static/js/main.ae2e3dfb.js",
+    "static/js/453.9127d580.chunk.js": "/Clash-Royle-quiz/static/js/453.9127d580.chunk.js",
+    "static/media/Supercell-Magic_1.ttf": "/Clash-Royle-quiz/static/media/Supercell-Magic_1.1cf1f72fa987d14c7366.ttf",
+    "index.html": "/Clash-Royle-quiz/index.html",
+    "main.36528511.css.map": "/Clash-Royle-quiz/static/css/main.36528511.css.map",
+    "main.ae2e3dfb.js.map": "/Clash-Royle-quiz/static/js/main.ae2e3dfb.js.map",
+    "453.9127d580.chunk.js.map": "/Clash-Royle-quiz/static/js/453.9127d580.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36528511.css",
+    "static/js/main.ae2e3dfb.js"
+  ]
+}
