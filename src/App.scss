@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Clash" ;
+    src: url(./assets/Clash-Royale-Font/Supercell-Magic_1.ttf);
+}
+
+ul{
+    list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Clash";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  padding: 5px;
+
+  &__up {
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  input{
+    width: 70%;
+    height: 30px;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+  }
+
+  button{
+    padding: 0 10px;
+  }
+}
+
+.lists{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.list {
+  margin-top: 10px;
+  border: 1px solid grey;
+  border-collapse: collapse;
+  height: min-content;
+
+  &__title {
+    border: 1px solid grey;
+    text-align: center;
+    font-size: large;
+    padding: 3px 0;
+  }
+
+  &__data{
+    opacity: 0.5;
+    font-size: 16px;
+  }
+
+  li{
+    margin: 2px 0;
+  }
+}
+
+.rare {
+    color: orange;
+}
+
+.epic{
+    color: rgb(213, 39, 244);
+    background-color: rgb(117, 48, 147);
+
+}
+
+.legendary{
+    color: aquamarine;
+    background-color: rgb(48, 147, 147);
+}
+
+.champion{
+    color: rgb(255, 255, 71);
+    background-color: black;
+}
+
+.spells{
+    color: rgb(93, 247, 162);
+}
+
+.message{
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    &.fade-in{
+        opacity: 1;
+    }
+
+    &.fade-out{
+        opacity: 0;
+    }
+}
+
+@media(min-width:800px){
+    .lists{
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .message{
+        top:20px
+    }
+}
+
