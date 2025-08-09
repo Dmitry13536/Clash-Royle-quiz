@@ -3,8 +3,23 @@ import "./App.scss";
 import List from "./Components/List";
 import { useGame } from "./useGame";
 
-
 function App() {
+  const {
+    reset,
+    showEvery,
+    userValue,
+    addUserValue,
+    every,
+    commonCards,
+    rareCards,
+    epicCards,
+    legendCards,
+    championCards,
+    towerTrops,
+    spells,
+    buildings,
+  } = useGame();
+
   const handleinput = useCallback(() => {
     if (every.includes(input.trim())) {
       addUserValue(input.trim());
@@ -15,7 +30,7 @@ function App() {
       setMessage("Nope");
       setTriger((prev) => prev + 1);
     }
-  }, [every, input, addUserValue]); // Укажите все зависимости
+  }, [every, input, addUserValue]); 
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.code === "Enter") {
@@ -46,21 +61,6 @@ function App() {
   const [message, setMessage] = useState("");
   const [show, setShow] = useState(false);
   const [input, setInput] = useState("");
-  const {
-    reset,
-    showEvery,
-    userValue,
-    addUserValue,
-    every,
-    commonCards,
-    rareCards,
-    epicCards,
-    legendCards,
-    championCards,
-    towerTrops,
-    spells,
-    buildings,
-  } = useGame();
 
   return (
     <div className="container">
